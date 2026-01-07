@@ -1,7 +1,17 @@
-*.ts linguist-language=JavaScript
-*.tsx linguist-language=JavaScript
+frontend/**/*.ts linguist-language=JavaScript
+frontend/**/*.tsx linguist-language=JavaScript
+frontend/*.ts linguist-language=JavaScript
 *.d.ts linguist-language=JavaScript
-tsconfig.json linguist-language=JavaScript
+
+# Exclude some TypeScript files from counting
+backend/**/*.ts linguist-language=Python
+backend/**/*.py linguist-language=Python
+
+# Solidity files
+smart-contracts/**/*.sol linguist-language=Solidity
+*.sol linguist-language=Solidity
+
+# Config files
 next.config.js linguist-language=JavaScript
 postcss.config.js linguist-language=JavaScript
 tailwind.config.ts linguist-language=JavaScript
